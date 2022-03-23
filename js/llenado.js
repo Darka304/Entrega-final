@@ -33,7 +33,7 @@ let titulo = document.createElement("h4")
 titulo.classList.add("titulo_tarjetas")
 titulo.textContent = producto.nombre
 
-let precio = document.createElement("a")
+let precio = document.createElement("h5")
 precio.classList.add("precio_tarjetas")
 precio.textContent = producto.precio + "$"
 
@@ -55,3 +55,28 @@ tarjeta.appendChild(boton)
 columna.appendChild(tarjeta)
 fila.appendChild(columna)
 })
+
+//Rutina para ampliar la info del producto
+
+let filaContenedora = document.getElementById("tarjetas")
+filaContenedora.addEventListener("click",function(evento){
+
+    if(evento.target.classList.contains("btn")){
+
+        let tituloModal = document.getElementById("tituloInfo")
+        let imagenModal = document.getElementById("fotoInfo")
+        let precioModal = document.getElementById("precioModal")
+        let descripcionModal = document.getElementById("descripcionModal")
+
+        imagenModal.src = evento.target.parentElement.querySelector("img").src
+        tituloModal.textContent = evento.target.parentElement.querySelector("h4").textContent
+        precioModal.textContent = evento.target.parentElement.querySelector("h5").textContent
+        descripcionModal.textContent = evento.target.parentElement.querySelector("p").textContent
+
+        /*console.log(evento.target.parentElement.querySelector("h4").textContent)*/
+
+        let modalInfo = new bootstrap.Modal(document.getElementById('modalInfo'))
+        modalInfo.show()
+    }
+})
+

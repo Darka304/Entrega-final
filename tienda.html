@@ -51,6 +51,42 @@
         </div>
     </main>
 
+    <section>
+      <!-- Modal -->
+<div class="modal fade" id="modalInfo" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">TiendaZ</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-8">
+              <h4 id="tituloInfo" class="tituloModal text-center"></h4>
+              <h5 id="precioModal" class="precioModal text-center"></h5>
+              <p id="descripcionModal" class="text-center"></p>
+            </div>
+            <div class="col-4">
+              <img src="" alt="" id="fotoInfo" class="imgModal w-100 img-fluid">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btnModal btn" data-dismiss="modal">Cerrar</button>
+        <button type="button" class="btnModal2 btn">Añadir al carrito</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </section>
+
     <script src="/js/llenado.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"

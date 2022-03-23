@@ -1,61 +1,92 @@
 /*Navbar*/
 
-.iconNavbar{
-    width: 50px;
+.iconNavbar {
+  width: 50px;
 }
 
-.navbar{
-    background-color: #ffc107;
+.navbar {
+  background-color: #ffc107;
 }
 
 /*Tarjetas*/
 
-.titulo_tarjetas{
-    text-align: center;
+.titulo_tarjetas {
+  text-align: center;
 }
 
-.precio_tarjetas{
-    color:#FF4D00;
-    text-align: center;
+.precio_tarjetas {
+  color: #ff4d00;
+  text-align: center;
 }
 
-.precio_tarjetas:hover{
-    color:#FF4D00;
-    text-decoration: none;
+.precio_tarjetas:hover {
+  color: #ff4d00;
+  text-decoration: none;
 }
 
-.descripcion_tarjetas{
-    text-align: center;
+.descripcion_tarjetas {
+  text-align: center;
 }
 
-.card{
-    border: 3px solid #FF9060;;
+.card {
+  border: 3px solid #ff9060;
 }
 
-.col{
-    margin-top: 2px;
-    margin-bottom: 2px;    
+.col {
+  margin-top: 2px;
+  margin-bottom: 2px;
 }
 
-.card-img-top{
-    display: block;
-    margin-top: 5px;
-    margin-right: auto;
-    margin-left: auto;
-    width: 90%;
+.card-img-top {
+  display: block;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 90%;
 }
 
-.boton-tarjeta{
-    display: block;
-    margin-left: auto;
-    margin-right:auto ;
-    width: 80%;
-    margin-bottom: 10px;
+.boton-tarjeta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  margin-bottom: 10px;
+}
+
+/*Modal*/
+
+.btnModal2 {
+  background-color: #ffc107;
+  color: #000;
+}
+
+.btnModal2:hover {
+  background-color: #ffcf3e;
+}
+
+.btnModal {
+  background-color: #a9a9a9;
+  color: #000;
+}
+
+.btnModal:hover {
+  background-color: #bcbcbc;
+}
+
+.imgModal{
+    border: 3px solid #ff9060;
+}
+
+.tituloModal{
+    color: #000;
+}
+
+.precioModal{
+    color: #ff4d00;
 }
 
 /*Footer*/
 
-footer{
-    background-color: #ffc107;
+footer {
+  background-color: #ffc107;
 }
-
